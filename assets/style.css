@@ -51,7 +51,6 @@ a {
 
 .cards {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin: 3.0rem 0;
 }
 
 .elipse {
@@ -114,18 +113,16 @@ a {
 
 
 .container {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
-    max-width: 1600px;
     display: flex;
     flex-direction: row;
-    padding: 4rem;
-
+    margin-top: 4.0rem;
 }
 
 .wrapper-1 {
-    width: 20%;
+    width: 348px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -138,7 +135,6 @@ a {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 3.2rem;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-cards);
@@ -157,11 +153,10 @@ a {
 
 .wrapper-1 .info-about {
     width: 100%;
-    height: 348px;
+    height: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 3.2rem;
     align-items: flex-start;
     justify-content: center;
     background-color: var(--bg-cards);
@@ -176,14 +171,13 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 2.0rem;
+    margin: 1.5rem 3.2rem;
 
 }
 
 .wrapper-1 .content-info img {
     margin-right: 10px;
 }
-
 
 .wrapper-2 {
     color: var(--text-color);
