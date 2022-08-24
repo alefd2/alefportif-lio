@@ -7,19 +7,27 @@
     --bg-techs: #CB92B1;
 }
 
+html {
+    /* cada 1rem será 10px */
+    font-size: 62.5%;
+    /* margin: 62.5%; */
+    /* padding: 62.5%; */
+}
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     width: 100vw;
-    overflow: none;
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow-y: none;
 
     font-family: Merriweather Sans, Arial, Helvetica, sans-serif;
-
+    color: var(--text-color);
     background-color: var(--body-bg-color);
 }
 
-a,
 h1,
 h2,
 h3,
@@ -29,12 +37,81 @@ h6,
 p {
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
+
+a {
+    color: currentColor;
+    text-decoration: none;
+
+}
+
+/* ------------------------------------------------  
+# Class Globais editadas
+ ------------------------------------------------ */
 
 .cards {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 3.0rem 0;
 }
+
+.elipse {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+}
+
+.font-title-name {
+    font-family: Merriweather Sans;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.font-title {
+    font-family: Merriweather Sans;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.font-title-card {
+    font-family: Merriweather Sans;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.font-content-card {
+    font-family: Merriweather Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.font-smal-subtitle {
+    font-family: Merriweather Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0rem;
+    text-align: left;
+
+}
+
+/* ------------------------------------------------ */
+
 
 .container {
     width: 100%;
@@ -43,7 +120,7 @@ p {
     max-width: 1600px;
     display: flex;
     flex-direction: row;
-    padding: 60px;
+    padding: 4rem;
 
 }
 
@@ -61,9 +138,52 @@ p {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    padding: 3.2rem;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg-cards);
-    color: var(--text-color);
 }
+
+.wrapper-1 .profile .image-wrapper img {
+    border-radius: 100%;
+    border: 2px solid #00FF00;
+    width: 12.8rem;
+    margin-bottom: 3.0rem;
+}
+
+.wrapper-1 .profile h6 {
+    margin-bottom: 1.0rem;
+}
+
+.wrapper-1 .info-about {
+    width: 100%;
+    height: 348px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--bg-cards);
+}
+
+.wrapper-1 .info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-1 .content-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.0rem;
+
+}
+
+.wrapper-1 .content-info img {
+    margin-right: 10px;
+}
+
 
 .wrapper-2 {
     color: var(--text-color);
@@ -99,6 +219,9 @@ p {
     border-radius: 20px;
     padding: 30px;
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .wrapper-2 .projects-card:nth-child(2) {
@@ -108,4 +231,46 @@ p {
 .wrapper-2 .projects-card .title-card-projects {
     display: flex;
     align-items: center;
+    margin-right: 9.16px;
+}
+
+.wrapper-2 .projects-card .title-card-projects img {
+    margin-right: 9.16px;
+}
+
+.wrapper-2 .projects-card .wrapper-botton-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrapper-2 .projects-card .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrapper-2 .projects-card .icons .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+.wrapper-2 .projects-card .icons .icon p {
+    margin-right: 9.67px;
+
+}
+
+.wrapper-2 .projects-card .wrapper-botton-card .tecnology {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrapper-2 .projects-card .wrapper-botton-card .tecnology .elipse {
+    margin-right: 9.67px;
 }
